@@ -35,7 +35,7 @@ app.middleware("http")(jwt_middleware)
 # Add health check endpoint
 @app.get("/health")
 async def health_check():
-    return {"status": "healthy", "service": "search-agent", "version": "1.1.7"}
+    return {"status": "healthy", "service": "search-agent", "version": "1.1.8"}
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
