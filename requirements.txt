@@ -1,0 +1,8 @@
+google-adk
+PyJWT
+cryptography
+python-dotenv
+pytest
+pytest-asyncio
+httpx
+requests
